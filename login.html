@@ -1,0 +1,61 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <style>
+      .card img{
+        height: 280px;
+      }
+    </style>
+  </head>
+    <link rel="stylesheet" href="test3.css">
+    <title>Login</title>
+</head>
+<div class="center">
+    <h1>Login Detail</h1>
+    <form method="post">
+    <div class="txt_field">
+        <input type="text" pattern="[a-z]*"
+        placeholder="What's your Username?">
+        <label>Username</label>
+    </div>
+    
+    <div class="txt_field">
+        <input id="password" type="password" required>
+        <span></span>
+        <label>password</label>
+    </div>
+    <div class="pass">Forgot Password?</div>
+    <input type="submit" value="Login" onclick="login">
+    <span></span>
+    <div class="Signup_link">
+        Not a member? <a href="signup.html">SignUp</a>
+        </div>
+    </form>
+  </div> 
+  <script >
+  
+    function login()
+    {
+        var password = document.getElementById("password").value;
+        alert(password);
+        console.log("hello world");
+        JSON.parse({'name': "Beki"});
+  
+    }
+  </script>/>
+  
+  
+      <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="./js/jQuery.js"></script>
+      <script src="./js/popper.js"></script>
+      <script src="./js/bootstrap.min.js"></script>
+    </body>
+  </html>
